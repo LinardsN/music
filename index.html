@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plāns B — Indie Rock no Liepājas</title>
+  <meta name="description" content="Plāns B ir Liepājas indie rok grupa. Klausies mūsu jaunāko mūziku, uzzini par tuvākajiem koncertiem un sazinies ar mums.">
+  <meta name="theme-color" content="#0d0b09">
+
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; connect-src 'self'; form-action 'self'; base-uri 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Plāns B — Indie Rock no Liepājas">
+  <meta property="og:description" content="Klausies mūsu mūziku, uzzini par tuvākajiem koncertiem un sazinies ar mums.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="lv_LV">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=630&fit=crop">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d0b09'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-size='60' font-weight='bold' font-family='Georgia,serif' fill='%23b47a3c'%3EB%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300;400;500;600&family=Rock+Salt&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300;400;500;600&family=Rock+Salt&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#sakums" class="nav__logo">Plāns B</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#sakums" class="nav__link active">Sākums</a></li>
+      <li><a href="#par-mums" class="nav__link">Par mums</a></li>
+      <li><a href="#muzika" class="nav__link">Mūzika</a></li>
+      <li><a href="#koncerti" class="nav__link">Koncerti</a></li>
+      <li><a href="#galerija" class="nav__link">Galerija</a></li>
+      <li><a href="#kontakti" class="nav__link">Kontakti</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Atvērt izvēlni" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#sakums" class="mobile-menu__link">Sākums</a></li>
+      <li><a href="#par-mums" class="mobile-menu__link">Par mums</a></li>
+      <li><a href="#muzika" class="mobile-menu__link">Mūzika</a></li>
+      <li><a href="#koncerti" class="mobile-menu__link">Koncerti</a></li>
+      <li><a href="#galerija" class="mobile-menu__link">Galerija</a></li>
+      <li><a href="#kontakti" class="mobile-menu__link">Kontakti</a></li>
+    </ul>
+    <div class="mobile-menu__socials">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">Spotify</a>
+      <a href="#" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ═══════════════════════════════════════
+         01 — HERO
+         ═══════════════════════════════════════ -->
+    <section class="hero" id="sakums">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title">Plāns B</h1>
+          <p class="hero__tagline">Indie Rock no Liepājas</p>
+          <div class="hero__cta">
+            <a href="#muzika" class="btn btn--primary">Klausīties ↗</a>
+            <a href="#koncerti" class="btn btn--secondary">Tuvākie koncerti →</a>
+          </div>
+        </div>
+        <div class="hero__image-wrap">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&fm=avif&q=80" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&fm=webp&q=80" type="image/webp">
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&q=80"
+              alt="Plāns B uzstājas koncertā"
+              class="hero__image"
+              width="800"
+              height="600"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </picture>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         02 — PAR MUMS (ABOUT)
+         ═══════════════════════════════════════ -->
+    <section class="about" id="par-mums">
+      <div class="about__grid">
+        <div class="about__image-wrap reveal">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=600&h=500&fit=crop&fm=avif&q=80" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=600&h=500&fit=crop&fm=webp&q=80" type="image/webp">
+            <img
+              src="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=600&h=500&fit=crop&q=80"
+              alt="Plāns B aiz kulisēm"
+              class="about__image"
+              width="600"
+              height="500"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+        </div>
+        <div class="about__content">
+          <span class="overline reveal">Par Mums</span>
+          <h2 class="section-title reveal">Stāsts</h2>
+          <p class="reveal">
+            <strong>Plāns B</strong> ir Liepājas indie rok grupa, kas dibināta 2024. gadā. Mēs spēlējam mūziku, kas skan kā vēla nakts pilsētā — skaļa, godīga un nedaudz netīra.
+          </p>
+          <p class="reveal">
+            No pirmajiem mēģinājumiem garāžā Liepājā līdz skatuvēm visā Latvijā — mēs esam Plāns B, jo Plāns A bija pārāk garlaicīgs.
+          </p>
+          <p class="reveal">
+            Mūsu skaņa apvieno 90. gadu alternatīvā roka enerģiju ar mūsdienu indie sajūtu. Mēs ticam, ka laba mūzika rodas no godīguma, nevis no perfekcionisma.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         03 — MŪZIKA (MUSIC)
+         ═══════════════════════════════════════ -->
+    <section class="music" id="muzika">
+      <div class="music__header">
+        <span class="overline reveal">Mūzika</span>
+        <h2 class="section-title reveal">Jaunākais</h2>
+      </div>
+      <div class="music__feature reveal">
+        <div class="music__art">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=500&fit=crop&fm=avif&q=80" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=500&fit=crop&fm=webp&q=80" type="image/webp">
+            <img
+              src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=500&fit=crop&q=80"
+              alt="Debija EP albuma vāks"
+              class="music__art-img"
+              width="500"
+              height="500"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+        </div>
+        <div class="music__info">
+          <h3 class="music__album-title">Debija EP</h3>
+          <p class="music__album-meta">2026 · 5 dziesmas · 18 min</p>
+          <ul class="tracklist">
+            <li class="tracklist__item">
+              <span class="tracklist__left">
+                <span class="tracklist__play" aria-hidden="true">&#9654;</span>
+                <span class="tracklist__num">01</span>
+                <span class="tracklist__name">Pirmā Dziesma</span>
+              </span>
+              <span class="tracklist__duration">3:42</span>
+            </li>
+            <li class="tracklist__item">
+              <span class="tracklist__left">
+                <span class="tracklist__play" aria-hidden="true">&#9654;</span>
+                <span class="tracklist__num">02</span>
+                <span class="tracklist__name">Nakts Rīgā</span>
+              </span>
+              <span class="tracklist__duration">4:15</span>
+            </li>
+            <li class="tracklist__item">
+              <span class="tracklist__left">
+                <span class="tracklist__play" aria-hidden="true">&#9654;</span>
+                <span class="tracklist__num">03</span>
+                <span class="tracklist__name">Plāns B</span>
+              </span>
+              <span class="tracklist__duration">3:58</span>
+            </li>
+            <li class="tracklist__item">
+              <span class="tracklist__left">
+                <span class="tracklist__play" aria-hidden="true">&#9654;</span>
+                <span class="tracklist__num">04</span>
+                <span class="tracklist__name">Pelēkā Zona</span>
+              </span>
+              <span class="tracklist__duration">2:47</span>
+            </li>
+            <li class="tracklist__item">
+              <span class="tracklist__left">
+                <span class="tracklist__play" aria-hidden="true">&#9654;</span>
+                <span class="tracklist__num">05</span>
+                <span class="tracklist__name">Pēdējā Stacija</span>
+              </span>
+              <span class="tracklist__duration">3:33</span>
+            </li>
+          </ul>
+          <div class="music__streaming">
+            <a href="#" class="streaming-btn" target="_blank" rel="noopener">Spotify</a>
+            <a href="#" class="streaming-btn" target="_blank" rel="noopener">Apple Music</a>
+            <a href="#" class="streaming-btn" target="_blank" rel="noopener">YouTube</a>
+            <a href="#" class="streaming-btn" target="_blank" rel="noopener">SoundCloud</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         04 — KONCERTI (SHOWS)
+         ═══════════════════════════════════════ -->
+    <section class="shows" id="koncerti">
+      <div class="shows__header">
+        <span class="overline reveal">Koncerti</span>
+        <h2 class="section-title reveal">Tuvākie</h2>
+      </div>
+      <div class="shows__list">
+        <article class="show reveal">
+          <div class="show__date">
+            <span class="show__month">Apr</span>
+            <span class="show__day">12</span>
+          </div>
+          <div class="show__details">
+            <h3 class="show__venue">Palladium Rīga</h3>
+            <p class="show__city">Rīga, Latvija</p>
+          </div>
+          <a href="#" class="show__ticket">Biļetes →</a>
+        </article>
+        <article class="show reveal">
+          <div class="show__date">
+            <span class="show__month">Apr</span>
+            <span class="show__day">28</span>
+          </div>
+          <div class="show__details">
+            <h3 class="show__venue">Hanzas Perons</h3>
+            <p class="show__city">Rīga, Latvija</p>
+          </div>
+          <a href="#" class="show__ticket">Biļetes →</a>
+        </article>
+        <article class="show reveal">
+          <div class="show__date">
+            <span class="show__month">Mai</span>
+            <span class="show__day">15</span>
+          </div>
+          <div class="show__details">
+            <h3 class="show__venue">Fontaine Palace</h3>
+            <p class="show__city">Liepāja, Latvija</p>
+          </div>
+          <a href="#" class="show__ticket">Biļetes →</a>
+        </article>
+        <article class="show reveal">
+          <div class="show__date">
+            <span class="show__month">Jūn</span>
+            <span class="show__day">07</span>
+          </div>
+          <div class="show__details">
+            <h3 class="show__venue">Positivus Festival</h3>
+            <p class="show__city">Salacgrīva, Latvija</p>
+          </div>
+          <a href="#" class="show__ticket">Info →</a>
+        </article>
+        <article class="show reveal">
+          <div class="show__date">
+            <span class="show__month">Jūl</span>
+            <span class="show__day">19</span>
+          </div>
+          <div class="show__details">
+            <h3 class="show__venue">Mežaparks Estrāde</h3>
+            <p class="show__city">Rīga, Latvija</p>
+          </div>
+          <a href="#" class="show__ticket">Biļetes →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         05 — GALERIJA (GALLERY)
+         ═══════════════════════════════════════ -->
+    <section class="gallery" id="galerija">
+      <div class="gallery__header">
+        <span class="overline reveal">Galerija</span>
+        <h2 class="section-title reveal">Fotogrāfijas</h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--tall reveal">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&h=800&fit=crop&fm=avif&q=75" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&h=800&fit=crop&fm=webp&q=75" type="image/webp">
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&h=800&fit=crop&q=75" alt="Koncerta publika" loading="lazy" decoding="async" width="600" height="800">
+          </picture>
+        </div>
+        <div class="gallery__item reveal">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=600&h=400&fit=crop&fm=avif&q=75" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=600&h=400&fit=crop&fm=webp&q=75" type="image/webp">
+            <img src="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=600&h=400&fit=crop&q=75" alt="Skatuve" loading="lazy" decoding="async" width="600" height="400">
+          </picture>
+        </div>
+        <div class="gallery__item reveal">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=400&fit=crop&fm=avif&q=75" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=400&fit=crop&fm=webp&q=75" type="image/webp">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=400&fit=crop&q=75" alt="Ģitāra tuvplānā" loading="lazy" decoding="async" width="600" height="400">
+          </picture>
+        </div>
+        <div class="gallery__item reveal">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&fm=avif&q=75" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&fm=webp&q=75" type="image/webp">
+            <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&q=75" alt="Skatuves gaismas" loading="lazy" decoding="async" width="600" height="400">
+          </picture>
+        </div>
+        <div class="gallery__item reveal">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=400&fit=crop&fm=avif&q=75" type="image/avif">
+            <source srcset="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=400&fit=crop&fm=webp&q=75" type="image/webp">
+            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=400&fit=crop&q=75" alt="Aizkulises" loading="lazy" decoding="async" width="600" height="400">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         06 — KONTAKTI + JAUNUMI
+         ═══════════════════════════════════════ -->
+    <section class="contact" id="kontakti">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <span class="overline reveal">Kontakti</span>
+          <h2 class="section-title reveal">Sazinies</h2>
+          <p class="reveal">Booking, sadarbības piedāvājumi, vai vienkārši gribi pateikt labdien — raksti mums.</p>
+          <div class="contact__details reveal">
+            <div class="contact__row">
+              <span class="contact__label">E-pasts</span>
+              <a href="mailto:info@plansb.lv" class="contact__value">info@plansb.lv</a>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Booking</span>
+              <a href="mailto:booking@plansb.lv" class="contact__value">booking@plansb.lv</a>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Menedžeris</span>
+              <span class="contact__value contact__value--plain">Jānis Bērziņš</span>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter reveal">
+          <h3 class="newsletter__title">Piesakies jaunumiem</h3>
+          <p class="newsletter__desc">Pirmais uzzini par jauniem koncertiem, mūziku un ekskluzīvu saturu.</p>
+          <form class="newsletter__form" id="newsletterForm">
+            <input type="text" name="name" placeholder="Tavs vārds" autocomplete="given-name" required>
+            <input type="email" name="email" placeholder="Tavs e-pasts" autocomplete="email" required>
+            <button type="submit" class="btn btn--primary btn--full">Pieteikties →</button>
+          </form>
+          <p class="newsletter__success" id="newsletterSuccess" hidden>Paldies! Tu esi pieteicies.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">Plāns B</span>
+      <div class="footer__socials">
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Spotify">Spotify</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+      </div>
+      <span class="footer__copy">&copy; 2026 Plāns B. Visas tiesības aizsargātas.</span>
+    </div>
+  </footer>
+
+  <!-- Gallery lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Aizvērt">&times;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" integrity="sha384-xNHNOfrykny9oFwnmpfNbkSc6isny38d1GZvTRVuFV0l9fTMIZKhULvomyQJSMRl" crossorigin="anonymous" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
